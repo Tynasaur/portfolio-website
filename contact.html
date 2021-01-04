@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Contact Me</title>
 		<link rel="shortcut icon" type="image/png" href="img/aries.png">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<!--my text(play)-->
+			 <!--my text(play)-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 	</head>
@@ -15,7 +14,7 @@
 		<header class="page-header">
 			<img src="img/mylogo.png" alt="logo with my name (Thaina Senra)" class="page-header__item">
 			<nav class="main-navigation page-header__item">
-				<ul role="menuber" class="navigation-list">
+				<ul role="menubar" class="navigation-list">
 					<li role="presentation">
 						<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
 					</li>
@@ -31,42 +30,50 @@
 				</ul>
 			</nav>
 		</header>
+		<main class="main main__contact">
+			<div class="contact__container">
+				<div class="contact__heading">
+					<h1 class="contact-name">
+            			Contact<span class="heading__accent contact__accent"> Me</span>
+          			</h1>
+          				<br>
+					<h3 class="contact-name">
+							<a href="tel+2406030559" class="contact__info"><span class="main__name--accent main__accent">(240)</span>603-0559</a>
+					</h3>
+					<h3 class="contact-name">
+							<a href="mailto:thainanoann@gmail.com" class="contact__info">thainanoann<span class="main__name--accent main__accent">@gmail</span>.com</a>
+					</h3>
+				</div>
+			</div>
+				<div class="contact__form">
+					<form action="#" method="post" id="contact-form">
+							<input type="text" class="contact__input" required
+							placeholder="Name"/>
+							<br>
+							<input type="email" class="contact__input" required
+							placeholder="E-mail"/>
+							<br>
+							<input type="tel" class="contact__input" placeholder="Telephone"/>
+							<br>
+							<textarea maxlength="240" class="contact__textarea contact__input" required
+							placeholder="Any questions or comments here"></textarea>
 
-		<h1>Contact</h1>
-		<div>
-			Thaina Senra<br>
-			Chicago, IL<br>
-			Cell: <a href="tel+2406030559" class="contact-info">+1(240)603-0559</a><br>
-			Email: <a href="mailto:thainanoann@gmail.com" class="contact-info">thainanoann@gmail.com</a><br>
-			<p>Contact me Here!</p>
-		</div>
-		<form action="" method="post" id="contact-form">
-			<label>Name:</label>
-			<input type="name" required><br>
+						<div class="button__form">
+							<button class="contact-button">submit</button>
+						</div>
+					</form>
+				</div>
 
-			<label>E-mail:</label>
-			<input type="email" required><br>
-
-			<label>Telephone: </label>
-			<input type="tel"><br>
-
-			<label>Message: </label>
-			<textarea maxlength="240" required></textarea><br>
-
-			<button class="contact-button">
-			submit
-			</button> 			
-		</form>
-
+		</main>
 		<footer class="page-footer">
-			<p>Find me on</p>
 			<div class="social-media">
+				<p>Find me on</p>
 				<a href="https://github.com/Tynasaur" >
 				<img src="img/github-128.png" alt="Github" class="svg_logo"></a>
+				<a href="https://www.linkedin.com/in/thaina-senra-b35122163/">
+  			<img src="img/linkedin-128.png" alt="LinkedIn" class="svg_logo"></a>
 				<a href="https://twitter.com/Tynasaur_">
 				<img src="img/twitter.png" alt="Twitter" class="svg_logo"></a>
-  				<a href="https://www.linkedin.com/in/thaina-senra-b35122163/">
-  				<img src="img/linkedin-128.png" alt="LinkedIn" class="svg_logo"></a>
   			</div>
 		</footer>
 	<script src="script.js"></script>
