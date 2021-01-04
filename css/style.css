@@ -99,6 +99,14 @@ a:active {
   font-weight: bold;
 }
 
+.code {
+  background-color: var(--accent-color);
+  color: #D2DAD5;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  word-spacing: -4px;
+}
 
 .navigation-list li {
   display: inline-block;
@@ -145,7 +153,7 @@ a:active {
   font-size: 18px;
 }
 
-/* ---profile--- */
+/* ---index.html--- */
 
 .profile__picture {
   float: left;
