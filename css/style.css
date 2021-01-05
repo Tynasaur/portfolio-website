@@ -191,10 +191,13 @@ a:active {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin: 50px;
+  display: grid;
+  justify-content: center;
   }
 
 .contact__container {
   text-align: right;
+
 }
 
 .contact__form {
@@ -206,7 +209,7 @@ a:active {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 600px;
-  justify-self: left;
+  justify-content: left;
   width: 400px;
 }
 
@@ -219,6 +222,7 @@ a:active {
 .contact__heading {
   justify-self: right;
   margin-bottom: 1.15em;
+  flex-basis: 200px;
 }
 
 .contact__textarea {
@@ -392,5 +396,23 @@ div {
   .grid__item:-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+}
+
+@media all and (min-width: 700px) {
+  html {
+    font-size: 17px;
+  }
+  .body {
+    grid-template-columns: 60px 1fr 60px;
+  }
+  .header__nav--list {
+    display: flex;
+  }
+  .header__nav--link {
+    margin: 0 1em;
+  }
+  .home__img {
+    width: 150px;
   }
 }
