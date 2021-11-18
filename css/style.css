@@ -68,7 +68,26 @@ strong {
 
 /* Buttons */
 
+.download-btn {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  display: block;
+  font-family: var(--ff-secondary);
+  color: var(--clr-light);
+  margin-top: -15px;
+  text-decoration: none;
+  font-size: 22px;
+  width: 200px;
+}
 
+.download-btn:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
 
 /* .btn {
   display: inline-block;
@@ -145,6 +164,16 @@ h3 {
   transition: 0.8s;
 }
 
+/* maybe change animation size */
+
+header.sticky {
+  padding: 5px 90px;
+  background: #fff;
+}
+
+header.sticky ul li a {
+  color: var(--clr-accent-dark);
+}
 
 .page-header__item {
   flex: 0 1 200px;
@@ -186,6 +215,13 @@ h3 {
 
 /*  Intro section  */
 
+.background-image {
+  background-image: url("https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 .intro {
   position: relative;
@@ -208,17 +244,15 @@ h3 {
     width: min-content;
     margin: 0 auto;
     grid-column-gap: 1em;
-    grid-template-areas: "img title""img subtitle";
+    grid-template-areas: "img title" "img subtitle";
     grid-template-columns: min-content max-content;
   }
-
   .intro__img {
     grid-area: img;
     min-width: 250px;
     position: relative;
     z-index: 2;
   }
-
   .section__subtitle--intro {
     align-self: start;
     grid-column: -1 / 1;
@@ -238,15 +272,13 @@ h3 {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 100px;
-    grid-template-areas: "title img""subtitle img""text img";
+    grid-template-areas: "title img" "subtitle img" "text img";
     grid-column-gap: 2em;
   }
-
   .section__title--about {
     grid-area: title;
     color: var(--clr-dark);
   }
-
   .section__subtitle--about {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -256,7 +288,6 @@ h3 {
     padding-left: 1em;
     padding-right: calc(200px + 4em);
   }
-
   .about-me__img {
     grid-area: img;
     position: relative;
@@ -302,7 +333,6 @@ h3 {
     grid-gap: 20px;
     margin: 0;
   }
-
   .container__item {
     width: auto;
     min-height: auto;
@@ -481,7 +511,6 @@ img {
   from {
     opacity: .4
   }
-
   to {
     opacity: 1
   }
@@ -491,7 +520,6 @@ img {
   from {
     opacity: .4
   }
-
   to {
     opacity: 1
   }
@@ -523,7 +551,6 @@ img {
   .grid {
     grid-gap: 10px;
   }
-
   .grid__item:-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
