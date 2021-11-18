@@ -86,9 +86,36 @@ strong {
   outline-offset: 3px;
 }
 
+.navigation-list__item:hover {
+  color: var(--clr-accent-dark);
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
 /* Buttons */
 
-.btn {
+.download-btn {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  display: block;
+  font-family: var(--ff-secondary);
+  color: var(--clr-light);
+  margin-top: -15px;
+  text-decoration: none;
+  font-size: 22px;
+  width: 200px;
+}
+
+.download-btn:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/* .btn {
   display: inline-block;
   padding: .5em 2.5em;
   background: var(--clr-accent);
@@ -166,11 +193,21 @@ h3 {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 0;
-  /* background-color: var(--clr-light); */
-  background: linear-gradient(rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0));
+  padding: 5px 50px;
   position: fixed;
   z-index: 99;
+  transition: 0.8s;
+}
+
+/* maybe change animation size */
+
+header.sticky {
+  padding: 5px 90px;
+  background: #fff;
+}
+
+header.sticky ul li a {
+  color: var(--clr-accent-dark);
 }
 
 .page-header__item {
@@ -188,22 +225,38 @@ h3 {
   margin-left: 15px;
   list-style-type: none;
   font-size: 20px;
+  transition: 0.6s;
+  font-family: var(--ff-secondary);
 }
 
 .navigation-list__item {
-  color: var(--clr-accent-dark);
+  color: var(--clr-accent);
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo {
   /* max-width: 250px; */
-  height: 15%;
-  width: 15%;
+  height: 17%;
+  width: 17%;
   margin-top: 10px;
+  position: relative;
+  transition: 0.6s;
+}
+
+.banner {
+  position: fixed;
+  width: 100%;
 }
 
 /*  Intro section  */
+
+.background-image {
+  background-image: url("https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 .intro {
   position: relative;
