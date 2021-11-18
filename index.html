@@ -22,11 +22,9 @@
 <body>
 	<header class="page-header">
 		<div class="logo">
-			<img src="img/thaina-logo 2.png" alt="">
+			<img src="img/thaina-logo3.png" alt="">
 		</div>
-		<!-- <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button> -->
+
 		<nav class="main-navigation page-header__item">
 			<ul role="menubar" class="navigation-list">
 				<li role="presentation">
@@ -45,16 +43,21 @@
 		</nav>
 	</header>
 
+	<section class="banner"></section>
+
 	<!-- Introduction -->
-	<section class="intro" id="home">
-		<h1 class="section__title section__title--intro">
-			Hi, I am <strong class="animate__animated animate__bounce">Thaina Senra</strong>
-		</h1>
-		<p class="section__subtitle section__subtitle--intro">full-stack web dev</p>
-		<img src="img/thaina-pic.png" alt="a picture of Tyna smiling" class="intro__img">
+	<div class=background-image>
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Hi, I am <strong class="animate__animated animate__bounce">Thaina Senra</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">full-stack web dev</p>
+			<img src="img/thaina-pic.png" alt="a picture of Tyna smiling" class="intro__img">
 
+		</section>
+					
+	</div>
 
-	</section>
 
 	<!-- About me -->
 	<section class="about-me" id="about">
@@ -62,9 +65,13 @@
 		<p class="section__subtitle section__subtitle--about">Web developer based out of Chicago</p>
 
 		<div class="about-me__body">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
+			<p> I'm a certified full-stack developer with a background in Cosmetology. As a former hairstylist I understand
+				the need for procedures. I know what steps I must take to produce a certain outcome, in this case a custom
+				haircut that works for the client. The same principle applies to web development. I need to know what structure
+				to build and code to write to ensure a certain outcome. I got into the tech world to flex my problem solving,
+				and creative thinking skills.
+			</p>
+
 		</div>
 
 		<img src="" alt="" class="about-me__img">
@@ -72,98 +79,114 @@
 
 	<!-- My Tech Stack -->
 	<section class="tech-stack" id="tech-stack">
-		<h2 class="section__title section__title--tech-stack">Tech Stack</h2>
-		<div class="stack-icon__container">
-			<img class="stack-icon" src="img/html.png" alt="HTML 5" title="HTML 5">
-			<img class="stack-icon" src="img/css.png" alt="CSS 3" title="CSS 3">
-			<img class="stack-icon" src="img/javascript.png" alt="Javascript" title="Javascript">
-			<img class="stack-icon" src="img/react.png" alt="React" title="React">
-			<img class="stack-icon" src="img/angular.png" alt="Angular" title="Angular">
-			<img class="stack-icon" src="img/node.png" alt="Node.js" title="Node.js">
-			<img class="stack-icon" src="img/bootstrap.png" alt="Bootstrap" title="Bootstrap">
-			<img class="stack-icon" src="img/typescript.png" alt="Typescript" title="Typescript">
+		<h2 class="section__title ">Tech Stack</h2>
+		<div class="stack-icon__container grid">
+			<img class="stack-icon grid__item" src="img/icon/html.png" alt="HTML 5" title="HTML 5">
+			<img class="stack-icon grid__item" src="img/icon/css.png" alt="CSS 3" title="CSS 3">
+			<img class="stack-icon grid__item" src="img/icon/javascript.png" alt="Javascript" title="Javascript">
+			<img class="stack-icon grid__item" src="img/icon/react.png" alt="React" title="React">
+			<img class="stack-icon grid__item" src="img/icon/angular.png" alt="Angular" title="Angular">
+			<img class="stack-icon grid__item" src="img/icon/node.png" alt="Node.js" title="Node.js">
+			<img class="stack-icon grid__item" src="img/icon/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+			<img class="stack-icon grid" src="img/icon/typescript.png" alt="Typescript" title="Typescript">
 		</div> <!-- / Tech Stack -->
 	</section>
 
-
 	<!-- My Projects -->
 	<section class="my-work" id="work">
+
 		<h2 class="section__title section__title--work">My Projects</h2>
 
+		<div class="slideshow__container">
 
-		<div class="portfolio">
-			<!-- Portfolio item 01 MyFlix API -->
-			<a href="#API" class="portfolio__item">
-				<img src="img/Screenshot (201).png" alt="" class="portfolio__img">
-			</a>
+			<div class="slides fade">
+				<img src="img/pokedex.png" alt="" class="portfolio__img active">
+				<div class="img__text">Pokedex</div>
+			</div>
 
-			<!-- Portfolio item 02 PokeDex -->
-			<a href="#pokedex" class="portfolio__item">
-				<img src="img/Pokedex.png" alt="" class="portfolio__img">
-			</a>
+			<div class="slides fade">
+				<img src="img/myFlix-agular1.png" alt="" class="portfolio__img">
+				<div class="img__text">myFlix-Angular</div>
+			</div>
 
-			<!-- Portfolio item 03 myFlix-React -->
-			<a href="#myFlix-React" class="portfolio__item">
-				<img src="" alt="" class="portfolio__img">
-			</a>
+			<div class="slides fade">
+				<img src="img/myFlix-angular2.png" alt="" class="portfolio__img">
+				<div class="img__text">myFlix-Angular</div>
+			</div>
 
-			<!-- Portfolio item 04 Chat-App -->
-			<a href="#chat-app" class="portfolio__item">
-				<img src="img/ChatApp.jpg" alt="" class="portfolio__img">
-			</a>
+			<div class="slides fade">
+				<img src=" img/meet-app1.png" alt="" class="portfolio__img">
+				<div class="img__text">Meet App</div>
+			</div>
 
-			<!-- Portfolio item 05 myFlix-Angular -->
-			<a href="#myFlix-Angular" class="portfolio__item">
-				<img src="img/myFlix-Angular1.png" alt="" class="portfolio__img">
-			</a>
+			<div class="slides fade">
+				<img src=" img/meet-app2.png" alt="" class="portfolio__img">
+				<div class="img__text">Meet App</div>
+			</div>
 
-			<!-- Portfolio item 06 Meet-App -->
-			<a href="#meet-app" class="portfolio__item">
-				<img src="img/MeetApp.png" alt="" class="portfolio__img">
-			</a>
+			<div class="slides fade">
+				<img src=" img/my-Flix-react1.png" alt="" class="portfolio__img">
+				<div class="img__text">myFlix-React</div>
+			</div>
 
+			<div class="slides fade">
+				<img src=" img/chat-app.jpg" alt="" class="portfolio__img">
+				<div class="img__text">Chat App</div>
+			</div>
 		</div>
+		<br>
+
+		<div>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+
 	</section>
 
 
 	<section class="my-projects" id="projects">
 		<p class="section__subtitle section__subtitle--work">Project Description</p>
 
-		<div class="project__container">
-			<div id="API" class="project__item">
+		<div class="project-container grid">
+			<div id="API" class="project-container__item grid__item">
 				<h3>MyFlix API</h3>
 				<p>API Backend to Movie Database. Built with Node.js, Express and Mongo DB. Deployed with Heroku</p>
 				<a class="project__link" href="https://github.com/Tynasaur/myFlixAPI">https://github.com/Tynasaur/myFlixAPI</a>
 			</div> <!-- / project -->
 
-			<div id="pokedex" class="project__item">
+			<div id="pokedex" class="project-container__item grid__item">
 				<h3>Pokedex</h3>
 				<p>JavaScript Single Page app based on the PokeAPI. Styled with Bootstrap. Pokedex Application</p>
 				<a class="project__link"
 					href="https://github.com/Tynasaur/Pokedex-JS">https://github.com/Tynasaur/Pokedex-JS</a>
 			</div> <!-- / project -->
 
-			<div id="myFlix-React" class="project__item">
+			<div id="myFlix-React" class="project-container__item grid__item">
 				<h3>MyFlix React</h3>
 				<p>React Application built using the MERN Stack. Displays movies, movie.</p>
 				<a class="project__link"
 					href="https://github.com/Tynasaur/myFlix-React-client">https://github.com/Tynasaur/myFlix-React-client</a>
 			</div> <!-- / project -->
 
-			<div id="chat-app" class="project__item">
+			<div id="chat-app" class="project-container__item grid__item">
 				<h3>Chat App</h3>
 				<p>React Native Application built with Expo. Chat Application</p>
 				<a class="project__link" href="https://github.com/Tynasaur/chat-app">https://github.com/Tynasaur/chat-app</a>
 			</div> <!-- / project -->
 
-			<div id="myFlix-Angular" class="project__item">
+			<div id="myFlix-Angular" class="project-container__item grid__item">
 				<h3>My Flix Angular</h3>
 				<p>Angular Application built using the MEAN stack. Styled with Material UI. Movie Database.</p>
 				<a class="project__link"
 					href="https://github.com/Tynasaur/myFlix-Angular-client">https://github.com/Tynasaur/myFlix-Angular-client</a>
 			</div> <!-- / project -->
 
-			<div id="meet-app" class="project__item">
+			<div id="meet-app" class="project-container__item grid__item">
 				<h3>Meet App</h3>
 				<p>Serverless TDD React App built with the Google Calendar API. Coding Events calendar</p>
 				<a class="project__link" href="https://github.com/Tynasaur/meet">https://github.com/Tynasaur/meet</a>
@@ -172,25 +195,27 @@
 
 	</section>
 
-
-
 	<!-- Footer -->
 	<footer id="footer">
 		<a href="mailto:thainasenra1@gmail.com" class="footer__link">thainasenra1@gmail.com</a>
 		<div class="social-media">
-
+			<p>Find me on</p>
 			<div class="social-list">
 				<a href="https://github.com/Tynasaur" target="_blank">
-					<img src="img/github-128.png" alt="Github" class="social-list__logo"></a>
+					<img src="img/icon/github-128.png" alt="Github" class="social-list__logo"></a>
 				<a href="https://www.linkedin.com/in/thaina-senra-b35122163/" target="_blank">
-					<img src="img/linkedin-128.png" alt="LinkedIn" class="social-list__logo"></a>
+					<img src="img/icon/linkedin-128.png" alt="LinkedIn" class="social-list__logo"></a>
 				<a href="https://twitter.com/Tynasaur_" target="_blank">
-					<img src="img/twitter.png" alt="Twitter" class="social-list__logo"></a>
+					<img src="img/icon/twitter.png" alt="Twitter" class="social-list__logo"></a>
 			</div>
 
 		</div>
 	</footer>
 
+	<script src="js/scripts.js">
+	</script>
 </body>
+
+
 
 </html>
