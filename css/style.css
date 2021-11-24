@@ -436,6 +436,7 @@ header.sticky ul li a {
   .section__title--about {
     grid-area: title;
     color: var(--clr-dark);
+    text-align: center;
   }
 
   .section__subtitle--about {
@@ -446,6 +447,7 @@ header.sticky ul li a {
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
+    text-align: center;
   }
 
   /* .about-me__img {
