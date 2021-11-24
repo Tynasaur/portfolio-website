@@ -181,6 +181,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
+.button:hover {
+ background-color: var(--clr-accent-dark);
+}
+
 /* Typography */
 
 h1, h2, h3 {
@@ -694,8 +698,8 @@ form {
   padding-top: 1.5em;
 }
 
-.project-container__item:hover {
-  transform: scale(1.1);
+.project__image:hover {
+  transform: scale(1.2);
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -818,6 +822,12 @@ form {
   justify-content: center;
   margin: 10px;
   padding: 0;
+}
+
+.social-list__logo:hover {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 3px;
+  border-radius: 50%;
 }
 
 .footer__text {
