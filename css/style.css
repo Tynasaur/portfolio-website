@@ -405,12 +405,12 @@ header.sticky ul li a {
     padding-right: calc(200px + 4em);
   }
 
-  .about-me__img {
+  /* .about-me__img {
     grid-area: img;
     position: relative;
     z-index: 2;
   }
-}
+} */
 
 .about-me {
   max-width: 1000px;
