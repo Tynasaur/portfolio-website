@@ -140,10 +140,11 @@ h3 {
 
 .section__title {
   margin-bottom: .25em;
+  text-align: center;
 }
 
 .section__title--intro {
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-reg);;
 }
 
 .section__title--intro strong {
@@ -166,6 +167,7 @@ h3 {
   color: var(--clr-accent-dark);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
+  text-align: center;
 }
 
 
@@ -296,7 +298,7 @@ header.sticky ul li a {
     color: var(--clr-dark);
   }
 
-  .section__subtitle--about {
+  /* .section__subtitle--about {
      grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
@@ -304,7 +306,7 @@ header.sticky ul li a {
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
-  }
+  } */
 
   .about-me__img {
     grid-area: img;
