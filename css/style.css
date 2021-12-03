@@ -13,7 +13,7 @@
   --clr-dark: #303030;
   --clr-accent: #6ad28c;
   --clr-accent-dark: #38724a;
-  --clr-footer: rgb(20, 20, 20);
+  --clr-footer: rgb(29, 29, 29);
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -110,7 +110,13 @@ a.button {
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
   margin-top: 1em;
+  border-radius: 1px;
 }
+
+a.button:hover {
+  background-color: var(--clr-accent-dark);
+}
+
 
 /* Typography */
 
@@ -433,7 +439,7 @@ header.sticky ul li a {
 }
 
 .project__link:hover {
-  text-shadow: 0 2px 5px var(--clr-accent-dark);
+  color: var(--clr-accent-dark);
 }
 
 .owl-carousel .prev-slide {
@@ -457,7 +463,7 @@ header.sticky ul li a {
 .section__title--contact {
   color: var(--clr-light);
   /* position: relative; */
-  text-align: left;
+  text-align: center;
 }
 
 .section__subtitle--contact {
@@ -474,8 +480,54 @@ header.sticky ul li a {
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
+  /* display: flex; */
+
 }
 
+.contact-form__container {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+ }
+
+form {
+  margin-top: 5em;
+  transition: all 4s ease-in-out;
+}
+
+
+.form-control {
+  width: 500px;
+  border: none;
+  outline: none;
+  color: var(--clr-light);
+  background: transparent;
+  border-bottom: 1px solid var(--clr-accent);
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+
+.form-submit {
+  display: inline-block;
+  padding: .5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+  margin-top: 1em;
+  border: none;
+}
+
+.form-submit:hover {
+  background-color: var(--clr-accent-dark);
+
+}
 
 
 
@@ -484,12 +536,12 @@ header.sticky ul li a {
 /* footer */
 
 #footer {
-  background: var(--clr-dark);
+  background: var(--clr-footer);
   text-align: center;
   clear: both;
   display: flex;
   flex-direction: column;
-  padding: 3%;
+  padding: 2%;
 }
 
 .footer__link {
@@ -509,6 +561,13 @@ header.sticky ul li a {
   height: 30px;
   width: 30px;
   margin: 7px;
+}
+
+.social-list__logo:hover {
+
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 3px;
+  border-radius: 50%;
 }
 
 .social-list {
