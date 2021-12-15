@@ -524,6 +524,7 @@ form {
   transition: transform 200ms ease-in-out;
   margin-top: 1em;
   border: none;
+  transition-duration: 0.9s;
 }
 
 .form-submit:hover {
